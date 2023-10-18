@@ -15,55 +15,15 @@ body {
     background: url('Loginbackground.jpg')
 }
 
-.bigwrapper {
-    width: 800px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 10px;
-}
-
-.bigwrapper::before {
-    content: '';
-    position: absolute;
-    width: 170px;
-    height: 400%;
-    background: linear-gradient(white, white);
-    box-shadow: 0 0 100px rgb(255, 255, 255);
-    animation: rotate 4s linear infinite;
-    z-index: -1;
-    border-radius: 10px;
-}
-
-.bigwrapper::after {
-    content: '';
-    position: absolute;
-    background: transparent;
-}
-
-@keyframes rotate {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
 .wrapper {
-    width: 1600px;
-    background: black;
+    width: 420px;
+    background: transparent;
     color: #fff;
+    border:2px solid #fff;
     border-radius: 10px;
     padding: 30px 40px;
     backdrop-filter: blur(20px);
-    z-index: 2;
+    box-shadow: 0 0 30px;
 }
 
 .wrapper h1 {
@@ -88,7 +48,7 @@ body {
     border-radius: 40px;
     border: 2px solid #fff;
     font-size: 16px;
-    color: white;
+    color: #fff;
     padding: 20px 45px 20px 20px;
 }
 
@@ -111,7 +71,7 @@ body {
 .wrapper .login-button {
     width: 100%;
     height: 45px;
-    background-color: white;
+    background-color: beige;
     margin-bottom: 15px;
     border: none;
     outline: none;
@@ -125,11 +85,15 @@ body {
 
 .login-button:hover {
     transform: translateY(3px);
-    background-color: black;
+    background-color: transparent;
 }
 
 .login-button .loginbtntext:hover{
     color:white;
+}
+
+.input-box input::placeholder {
+    color: #fff;
 }
 
 .input-box input::placeholder {
